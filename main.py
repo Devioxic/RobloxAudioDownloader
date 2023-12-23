@@ -5,7 +5,6 @@ import argparse
 import os
 import random
 import string
-import urllib.request
 import base64
 
 def generate_random_string(length):
