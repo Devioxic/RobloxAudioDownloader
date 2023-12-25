@@ -28,7 +28,7 @@ def transfer_files(folder_name : str, file_name : str):
 
 def save_alt_file(data : bytearray, file_name : str, folder_name : str = "Audio"):
     with open(f"{folder_name}/{file_name}.ogg", "wb") as fh:
-        fh.write(base64.decodebytes(data))
+        fh.write(data)
 
 def get_file_content_chrome(driver, uri):
   result = driver.execute_async_script("""
